@@ -180,7 +180,7 @@ html {
     height: 150vh;
     background: linear-gradient(-225deg, rgba(34, 225, 255, 0.8) 0%,
                 rgba(29, 143, 225, 0.8) 48%, #625EB1 100%),
-                url("box.svg") center no-repeat;
+                url("") center no-repeat;
     background-size: cover;
     color: #fff;
     position: relative;
@@ -229,7 +229,7 @@ border-radius: 25px;
 }
 
 .gigi{
-
+  
 padding: 1.5rem 5rem;
 
 
