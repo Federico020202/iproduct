@@ -98,7 +98,7 @@ a{
 
 @media screen and (max-width: 868px){
     .blog-post {
-        max-width: 90rem;
+        max-width: 150rem;
     }
 }
 
