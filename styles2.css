@@ -24,7 +24,7 @@ a{
     min-width: 35rem;
     max-width: 40rem;
     height: 35rem;
-    transform: translateX(+8rem);
+    transform: translateX(-8rem);
     position: relative;
 }
 
