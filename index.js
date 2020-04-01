@@ -9,19 +9,20 @@ if (product === ""){
 
 document.querySelector("#titolo").innerText=product;
 var product = product.toLowerCase();
+document.getElementById('imgpr').src= (product);
+document.getElementById('imgpr').width= "220";
+document.getElementById('imgpr').height= "270";
 
-  if (product === "iphone xs"){
+        if (product === "iphone xs" || product === "iphone xs max"|| product === "iphone 11" || product === "iphone 11 pro" || product === "iphone 11 pro max"){
 
-    document.getElementById('imgpr').src= "iphone xs.png";
-    document.getElementById('imgpr').width= "400";
-    document.getElementById('imgpr').height= "400";
+
     document.getElementById('produttore').innerText= "China";
 
     document.getElementById('proprietario').innerText= "Ronald Wayne";
 
-    document.getElementById('distributore').innerText= "State Property.";
-    document.querySelector("#titolo").innerText=product;
-    document.querySelector("#titolo").innerText=product;
+    document.getElementById('distributore').innerText= "State Distribution.";
+    // document.querySelector("#titolo").innerText=product;
+    // document.querySelector("#titolo").innerText=product;
 
 
 }
