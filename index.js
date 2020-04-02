@@ -16,9 +16,9 @@ var iphone = {
   Img:"iphone 11.png"
 }
 var ferrarelle = {
-  Produttore:"John",
-  Distributore: "Doe",
-  Proprietario: "sesso",
+  Produttore:"Italia",
+  Distributore: "Roma",
+  Proprietario: "Carlo Pontecorvo, Presidente e Amministratore Delegato",
   Img:"ferrarelle.png"
 }
 var barilla = {
@@ -49,15 +49,15 @@ document.getElementById('read').href= ("https://it.wikipedia.org/wiki/"+product)
           if (product === "ferrarelle" || product === "acqua ferrarelle" || product === "ferrarelle acqua"|| product === "ferrarelle 0,5" ){
 
 
-            document.getElementById('imgpr').width= "300";
-            document.getElementById('imgpr').height= "600";
+            document.getElementById('imgpr').width= "200";
+            document.getElementById('imgpr').height= "450";
               document.getElementById('imgpr').src= ferrarelle.Img;
 
-              document.getElementById('produttore').innerHTML= iphone.Produttore;
+              document.getElementById('produttore').innerHTML= ferrarelle.Produttore;
 
-              document.getElementById('proprietario').innerText= iphone.Proprietario;
+              document.getElementById('proprietario').innerText= ferrarelle.Proprietario;
 
-              document.getElementById('distributore').innerText= iphone.Distributore;
+              document.getElementById('distributore').innerText= ferrarelle.Distributore;
 
           }
           if (product === "barilla" || product === "pasta barilla" || product === "sughi barilla"){
