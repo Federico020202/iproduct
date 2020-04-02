@@ -36,7 +36,7 @@ var product = product.toLowerCase();
 document.getElementById('read').href= ("https://it.wikipedia.org/wiki/"+product);
           if (product === "iphone" || product === "iphone xs" || product === "iphone xs max"|| product === "iphone 11" || product === "iphone 11 pro" || product === "iphone 11 pro max"){
 
-            document.getElementById('imgpr').width= "350";
+            document.getElementById('imgpr').width= "400";
             document.getElementById('imgpr').height= "400";
               document.getElementById('imgpr').src= iphone.Img;
               document.getElementById('produttore').innerHTML= iphone.Produttore;
