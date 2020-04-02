@@ -7,27 +7,71 @@ if (product === ""){
 
 }
 
+var miao = product;
+
+var iphone = {
+  Produttore:"Cina",
+  Distributore: "State Distribution.",
+  Proprietario: "Ronald Wayne",
+  Img:"iphone 11.png"
+}
+var ferrarelle = {
+  Produttore:"John",
+  Distributore: "Doe",
+  Proprietario: "sesso",
+  Img:"ferrarelle.png"
+}
+var barilla = {
+  Produttore:"Parma",
+  Distributore: "Italia",
+  Proprietario: "Guido Barilla (presidente)",
+  Img:"https://argomenti.ilsole24ore.com/Immagini/Editrice/ILSOLE24ORE/ARGOMENTI/Online/Aziende/Immagini/ABC/barilla.jpg"
+}
+
+
+
 document.querySelector("#titolo").innerText=product;
 var product = product.toLowerCase();
 
-document.getElementById('imgpr').src= (product);
-document.getElementById('imgpr').width= "220";
-document.getElementById('imgpr').height= "270";
 document.getElementById('read').href= ("https://it.wikipedia.org/wiki/"+product);
+          if (product === "iphone" || product === "iphone xs" || product === "iphone xs max"|| product === "iphone 11" || product === "iphone 11 pro" || product === "iphone 11 pro max"){
 
-if (product === "iphone xs" || product === "iphone xs max"|| product === "iphone 11" || product === "iphone 11 pro" || product === "iphone 11 pro max"){
+            document.getElementById('imgpr').width= "350";
+            document.getElementById('imgpr').height= "400";
+              document.getElementById('imgpr').src= iphone.Img;
+              document.getElementById('produttore').innerHTML= iphone.Produttore;
+
+              document.getElementById('proprietario').innerText= iphone.Proprietario;
+
+              document.getElementById('distributore').innerText= iphone.Distributore;
+
+          }
+          if (product === "ferrarelle" || product === "acqua ferrarelle" || product === "ferrarelle acqua"|| product === "ferrarelle 0,5" ){
 
 
-    document.getElementById('produttore').innerText= "China";
+            document.getElementById('imgpr').width= "300";
+            document.getElementById('imgpr').height= "600";
+              document.getElementById('imgpr').src= ferrarelle.Img;
 
-    document.getElementById('proprietario').innerText= "Ronald Wayne";
+              document.getElementById('produttore').innerHTML= iphone.Produttore;
 
-    document.getElementById('distributore').innerText= "State Distribution.";
+              document.getElementById('proprietario').innerText= iphone.Proprietario;
+
+              document.getElementById('distributore').innerText= iphone.Distributore;
+
+          }
+          if (product === "barilla" || product === "pasta barilla" || product === "sughi barilla"){
 
 
-    // document.querySelector("#titolo").innerText=product;
-    // document.querySelector("#titolo").innerText=product;
+            document.getElementById('imgpr').width= "300";
+            document.getElementById('imgpr').height= "300";
+              document.getElementById('imgpr').src= barilla.Img;
 
+              document.getElementById('produttore').innerHTML= barilla.Produttore;
 
-}
-document.getElementById('imgpr').src= (product+".png");
+              document.getElementById('proprietario').innerText= barilla.Proprietario;
+
+              document.getElementById('distributore').innerText= barilla.Distributore;
+
+          }
+// document.getElementById('imgpr').src= (product+".png");
